@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Pribadi</title>
+    <title>Profil Widya Intawani</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -28,23 +28,40 @@
             border-radius: 8px;
         }
 
-        h1, h2, h3 {
+        h1 {
+            color: #fff;
+        }
+
+        h2, h3 {
             color: #333;
         }
 
         p {
             line-height: 1.6;
+            color: #5a4949;
+            margin-bottom: 8px; /* Menyesuaikan jarak antara paragraf */
+        }
+
+        p1 {
+            line-height: 1;
             color: #555;
+            font-size: small;
+            word-spacing: 0%;
+            margin-top: 0; /* Menghilangkan margin atas */
+            margin-bottom: 12px; /* Menyesuaikan jarak antara p1 dan paragraf berikutnya */
         }
 
         .profile-img {
-            max-width: 100%;
+            max-width: 50%;
             height: auto;
-            border-radius: 8px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
         }
 
         .social-links {
             margin-top: 20px;
+            align-items: center;
         }
 
         .social-links a {
@@ -52,36 +69,141 @@
             margin-right: 10px;
             color: #333;
             text-decoration: none;
-            font-size: 1.5em;
+            font-size: 1em;
         }
+
+
+        .social-links img {
+            width: 30px; /* Sesuaikan ukuran logo sosial media sesuai keinginan */
+            height: 30px;
+            margin-right: 5px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-links img:hover {
+            transform: scale(1.2);
+        }
+
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 0.5em 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.7em;
+        }
+
+        /* Tambahkan animasi */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            animation: fadeIn 1s ease-in-out; /* Animasi fade in */
+        }
+
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#about">About me</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#oranisational">Organisational</a>
+        <!-- Tambahkan bagian keterampilan atau keahlian jika diperlukan -->
+    </nav>
 
     <header>
-        <h1>Profil Pribadi</h1>
+        <h1>Widya Intawani</h1>
     </header>
 
-    <section>
-        <img src="path/to/profile-picture.jpg" alt="Profil Saya" class="profile-img">
-        <h2>Nama Saya</h2>
-        <p>Selamat datang di blog pribadi saya. Saya adalah [deskripsi singkat tentang diri Anda].</p>
+    <section id="about"> <!-- Tambahkan id untuk setiap bagian -->
+        <img src="picture.jpg" alt="Profil Saya" class="profile-img">
+        <h2>About me</h2>
+        <p>I graduated in Information Systems from Bina Nusantara University. I am currently working as an IT Officer Development Program in the banking industry. I have experience in network planning and provisioning in the telecommunication industry. I have learned a lot about the field of Information Technology, including Information Systems Project Management, UI/UX, SDLC, Big Data Technologies, Artificial Intelligence, Database Systems, etc., which can support work in the IT field. I am a woman who likes challenges and hard work. Working effectively both in a team environment and independently. Ability to work under pressure and multitask. I enjoy studying, reading, and running as my hobbies.</p>
+    </section>
 
-        <h3>Pengalaman</h3>
-        <p>[Deskripsi pengalaman Anda]</p>
+    <section id="experience">
+        <h3>Experience</h3>
+        <p> Network Operation and Reliability Internship </p>
+        <p1>PT Telemedia Dinamika Sarana - July 2019 until Sept 2019 </p1> <br>
+        <p1>Fiber optik installation and access point configuration. Document control and monthly report On Job Training </p1> <br>
+        <p1>Project: The Installation of Fiber Optic Network from ODP to ONT in E-commerce Company by Gasnet.</p1>   
 
-        <h3>Pendidikan</h3>
-        <p>[Deskripsi pendidikan Anda]</p>
+        <p> Network Planning and Provisioning Staff </p>
+        <p1> PT Telemedia Dinamika Sarana - Jan 2021 until Oct 2023 </p1> <br>
+        <p1> Plan, manage, and ensure efficient and effective network availability.
+            Evaluate current network capacity, plan future network expansion, and coordinate the installation of new network devices.
+            Responsible for monitoring network performance, addressing issues that may arise, keeping up to date with the latest network
+            technologies, and ensuring that the company's network remains competitive.</p1>
 
-        <h3>Keterampilan</h3>
-        <p>[Daftar keterampilan atau keahlian Anda]</p>
+        <p> Officer Development Program IT </p>
+        <p1> PT Bank Negara Indonesia Tbk - Nov 2023 until now </p1> <br>
+        <p1> As an ODP IT, my role encompasses a comprehensive training phase focused on the company's IT infrastructure, systems, and policies. 
+            I actively contribute to diverse IT projects, gaining valuable experience in software development, system implementation, and cybersecurity. 
+            Engaging in rotations across different IT departments, my journey involves continuous learning and skill development. 
+            Collaborating with cross-functional teams, I focus on problem-solving, ensuring adherence to policies, and meticulous documentation. 
+        </p1>
+    </section>
+
+    <section id="education">
+        <h3>Education</h3>
+        <p> Jakarta State Polytechnic - Telecommucication Engineering - 2017 until 2020 </p>
+        <p1>Final Project : Design of PDAM Water Payment Bill Monitoring System Prototype Based Long Range (LoRa) Communication</p1>
+        <p> Bina Nusantara University - 2021 until 2023</p>
+        <p1>Thesis: User Experience Analysis on Mobile-Based Payment Using Usability Testing and System Usability Scale Methods</p1>
+    </section>
+
+    <section id="oranisational">
+        <h3>Organisational Experience</h3>
+        <p> IMABA</p>
+        <p1>Secretary - Batak student association organization in the campus environment.</p1> <br>
+        <p1>As Secretary, assists the Head of the Organization in implementing the formulation of program and activity plans, coordinating,
+            monitoring, general administration and membership affairs, finance, planning as well as evaluation and reporting.</p1>
+        
+        <p> Generasi Literasi</p> 
+        <p1>Voluenteer - Indonesian Literacy Community</p1> <br>
+        <p1>Group Team Leader. The best team in Generation Literacy Batch 5. Learn and move together to understand the literacy ecosystem</p1>
+    
+        <p> Festival Film Indonesia </p>
+        <p1> Voluenteer - Indonesian Film Community</p1> <br>
+        <p1> Contribute to the preparation of Malam Anugerah Piala Citra-42 FFI 2022 and ensure that all series of events </p1>
+    
+    
+    </section>
+
+        <!-- <h3>Keterampilan</h3>
+        <p>[Daftar keterampilan atau keahlian Anda]</p> -->
+
+        <br>
 
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/namalinkedin" target="_blank">LinkedIn</a>
-            <a href="https://github.com/namagithub" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/widyaintawani" target="_blank"><img src="linkedin-logo.png" alt="LinkedIn"></a>
+            <a href="https://github.com/widyaintawani" target="_blank"><img src="github-logo.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/widyaintawani/" target="_blank"><img src="instagram-logo.png" alt="Instagram"></a>
+            <a href="https://medium.com/@widyaintawani" target="_blank"><img src="medium-logo.png" alt="Medium"></a>
             <!-- Tambahkan sosial media lainnya sesuai kebutuhan -->
         </div>
-    </section>
 
 </body>
 </html>
